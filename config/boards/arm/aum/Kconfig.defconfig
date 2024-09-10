@@ -1,7 +1,7 @@
 if BOARD_AUM_LEFT
 
 config ZMK_KEYBOARD_NAME
-		default "AUM"
+		default "AUM-MX"
 
 config ZMK_SPLIT_ROLE_CENTRAL
 		default y
