@@ -18,6 +18,14 @@
         };
     };
 
+    scroll_encoder: scroll_encoder {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
+        tap-ms = <30>;
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -35,7 +43,7 @@
                                      &kp LEFT_ALT  &kp LEFT_COMMAND  &kp SPACE       &mo 1         &mo 2  &kp RCTRL
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &msc SCRL_UP SCRL_DOWN &inc_dec_kp C_VOL_UP C_VOL_DN &msc SCRL_UP SCRL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder &inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>;
         };
 
         L1 {
@@ -46,7 +54,7 @@
                                                     &trans        &trans         &trans    &trans  &trans         &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &msc SCRL_UP SCRL_DOWN &inc_dec_kp C_VOL_UP C_VOL_DN &msc SCRL_UP SCRL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder &inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>;
         };
 
         L2 {
@@ -57,7 +65,7 @@
                                                     &trans        &trans         &trans    &trans  &trans         &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &msc SCRL_UP SCRL_DOWN &inc_dec_kp C_VOL_UP C_VOL_DN &msc SCRL_UP SCRL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder &inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>;
         };
 
         L3 {
