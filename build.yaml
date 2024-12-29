@@ -13,7 +13,9 @@
 #
 include:
   - board: aum_left
-    shield: ["nice_view_reverse","settings-reset"]
+    shield: nice_view_reverse
+    shield: settings_reset
     snippet: studio-rpc-usb-uart
   - board: aum_right
-    shield: ["nice_view_reverse","settings-reset"]
+    shield: nice_view_reverse
+    shield: settings_reset
