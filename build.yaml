@@ -20,8 +20,10 @@ include:
     shield: nice_view_reverse
     snippet: studio-rpc-usb-uart
   - board: aum_right
+    shield: nice_view_reverse
   # planckboy
   - board: planck_left
     snippet: studio-rpc-usb-uart
     shield: nice_view
   - board: planck_right
+    shield: nice_view
