@@ -17,6 +17,46 @@
             bindings = <&mo 3>;
             key-positions = <40 41>;
         };
+
+        desk_l_up {
+            bindings = <&kp LC(UP_ARROW)>;
+            key-positions = <3 4>;
+        };
+
+        desk_l_left {
+            bindings = <&kp RC(LEFT)>;
+            key-positions = <14 13>;
+        };
+
+        desk_l_right {
+            bindings = <&kp LC(RIGHT)>;
+            key-positions = <15 16>;
+        };
+
+        desk_l_down {
+            bindings = <&kp RC(UP_ARROW)>;
+            key-positions = <27 28>;
+        };
+
+        desk_r_up {
+            bindings = <&kp RC(UP_ARROW)>;
+            key-positions = <7 8>;
+        };
+
+        desk_r_left {
+            bindings = <&kp RC(LEFT)>;
+            key-positions = <19 20>;
+        };
+
+        desk_r_right {
+            bindings = <&kp RC(RIGHT)>;
+            key-positions = <21 22>;
+        };
+
+        desk_r_down {
+            bindings = <&kp RC(DOWN_ARROW)>;
+            key-positions = <31 32>;
+        };
     };
 
     behaviors {
