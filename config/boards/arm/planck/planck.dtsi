@@ -40,7 +40,7 @@
 
  matrix_physical_layout: matrix_physical_layout {
  	 compatible = "zmk,physical-layout";
- 	 display-name = "PlanckBoy default";
+ 	 display-name = "PlanckBoy/GB default";
  	
 	 transform = <&default_transform>;
 
