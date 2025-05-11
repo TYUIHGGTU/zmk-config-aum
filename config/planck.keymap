@@ -107,15 +107,15 @@
             //                               |   GUI   |   DEL   | RETURN  |  SPACE  | ESCAPE  |  |  RETURN |  SPACE  |   TAB   |   BSPC  |  R ALT  |
 
             bindings = <
-&kp ESC       &kp Q  &kp W  &kp E      &kp R     &kp T      &kp Y  &kp U  &kp I          &kp O          &kp P     &kp BACKSPACE
-&kp CAPSLOCK  &kp A  &kp S  &kp D      &kp F     &kp G      &kp H  &kp J  &kp K          &kp L          &kp SEMI  &kp RETURN
-&kp LSHFT     &kp Z  &kp X  &kp C      &kp V     &kp B      &kp N  &kp M  &kp COMMA      &kp DOT        &kp FSLH  &kp BSLH
-                     &none  &kp LCTRL  &kp LGUI  &kp SPACE  &mo 1  &mo 2  &kp RIGHT_ALT  &kp LC(LG(Q))
+&kp ESC       &kp Q  &kp W          &kp E      &kp R     &kp T      &kp Y  &kp U  &kp I          &kp O       &kp P     &kp BACKSPACE
+&kp CAPSLOCK  &kp A  &kp S          &kp D      &kp F     &kp G      &kp H  &kp J  &kp K          &kp L       &kp SEMI  &kp RETURN
+&kp LSHFT     &kp Z  &kp X          &kp C      &kp V     &kp B      &kp N  &kp M  &kp COMMA      &kp DOT     &kp FSLH  &kp BSLH
+                     &kp LC(LG(Q))  &kp LCTRL  &kp LGUI  &kp SPACE  &mo 1  &mo 2  &kp RIGHT_ALT  &kp K_MUTE
             >;
 
             sensor-bindings =
                 <&inc_dec_kp DOWN UP_ARROW>,
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+                <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         layer_1 {
@@ -140,7 +140,7 @@
             bindings = <
 &open_chrome  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3    &bt BT_SEL 4   &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD                 &rgb_ug RGB_SAI                    &rgb_ug RGB_SAD                    &rgb_ug RGB_BRI
 &trans        &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3   &bt BT_DISC 4  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD                 &rgb_ug RGB_EFF                    &rgb_ug RGB_EFR                    &rgb_ug RGB_COLOR_HSB(39,100,57)
-&trans        &bt BT_PRV     &bt BT_NXT     &bt BT_CLR     &bt BT_CLR_ALL  &kp LC(LG(Q))  &rgb_ug RGB_ON   &rgb_ug RGB_OFF  &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_COLOR_HSB(125,100,50)  &rgb_ug RGB_COLOR_HSB(201,100,50)  &rgb_ug RGB_COLOR_HSB(306,100,50)
+&trans        &bt BT_PRV     &bt BT_NXT     &bt BT_CLR     &bt BT_CLR_ALL  &none          &rgb_ug RGB_ON   &rgb_ug RGB_OFF  &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_COLOR_HSB(125,100,50)  &rgb_ug RGB_COLOR_HSB(201,100,50)  &rgb_ug RGB_COLOR_HSB(306,100,50)
                              &trans         &trans         &trans          &trans         &trans           &trans           &kp LC(LG(Q))                   &trans
             >;
         };
