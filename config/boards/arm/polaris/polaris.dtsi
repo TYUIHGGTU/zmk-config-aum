@@ -16,8 +16,22 @@
 		       compatible = "zmk,ext-power-generic";
 		       control-gpios = <&gpio0 12 GPIO_ACTIVE_HIGH>;
 		       init-delay-ms = <50>;
-		   };   
+		 };   
 
+    split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        right_trackpad: right_trackpad@0 {
+            compatible = "zmk,input-split";
+            reg = <0>;
+        };
+    };
+    right_listener: right_listener {
+        compatible = "zmk,input-listener";
+        status = "disabled";
+        device = <&right_trackpad>;
+    };
     chosen {
         zephyr,code-partition = &code_partition;
         zephyr,sram = &sram0;
