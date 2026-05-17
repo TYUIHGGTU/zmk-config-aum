@@ -1,7 +1,6 @@
 ---
 include:
-  - board: polaris_left
+  - board: planck_left
     snippet: studio-rpc-usb-uart
-  - board: polaris_right
-    shield: nice_view_reverse
+  - board: planck_right
 
